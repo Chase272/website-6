@@ -4,20 +4,39 @@
 }
 
 body{
-background-image: url("img/");
-background-size: cover;
+background-image: url("img/hero-img.png");
+background-size: 100%;
+font-family: Arial, sans-serif;
 }
 
-nav {
-    padding: 5px;
+
+.navbar {
+    box-sizing: border-box;
     position: relative;
-    margin: auto;
     display: flex;
-    margin: 10px;
-background-color: rgb(11, 243, 173);
-text-decoration-color: rgb(151, 22, 238);
-text-decoration: ;
-box-shadow: 4px 5px 5px;
+background-color: whitesmoke;
+text-decoration: none;
+box-shadow: 4px 5px 6px;
 border-radius: 5px;
+height: 60px;
+flex: row;
+flex-wrap: wrap;
+width: 99%;
+justify-content: space-evenly;
+word-spacing: 22px;
+justify-content: flex-end;
+padding-right: 10px;
+align-content: center;
+}
+a{
+    text-decoration: none;
+    text-decoration-color: none;
+    color: black;
 
 }
+a:hover 
+{
+       color: white;
+background-color: #65C9CD;
+
+} 
