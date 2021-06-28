@@ -27,3 +27,28 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 }
+ (function(){
+var elements;
+var windowHeight;
+
+function getelements() {
+  elements = document.querySelectorAll(".hidden");
+  windowHeight = window.innerHeight;
+}
+function checkPosition() {
+  for (var i = 0;i<elements.length;i++){
+   var currentelement = elements[i];
+   var positionFromTop = elements[i].getBoundingClientRect().top;
+
+   if (positionFromTop - windowHeight<=0) {
+     currentelement.classList.add("fade-in");
+     currentelement.classList.remove("hidden");
+   }
+  }
+}
+window.addEventListener('scroll', checkPosition);
+window.addEventListener('resize',getelements);
+
+getelements();
+checkPosition();
+ }) ();
