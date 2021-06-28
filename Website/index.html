@@ -1,33 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="index.css" rel="stylesheet">
-    <title> index</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Black Fungus Survey</title>
+    <link href="index.css" rel="stylesheet" />
+    <title>index</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <ul class="nav-list">
+        <a href="#" alt="#">Home </a>
+        <a href="#" alt="#">Home </a>
+        <a href="#" alt="#">Home </a>
+        <a href="#" alt="#">Home </a>
+        <button value="Home" class="nav-button">Home</button>
+      </ul>
+    </nav>
 
- <nav class="navbar"> 
-   <ul class="nav-list">
-     <a href="#" alt="#">Home </a>
-     <a href="#" alt="#">Home </a>
-     <a href="#" alt="#">Home </a>
-     <a href="#" alt="#">Home </a>
-     <button value= "Home" class="nav-button">Home</button>
-     
-     
-         </ul>
-        </nav>
-
-
-
-<div class="slideshow-container">
+    <div class="slideshow-container">
       <!-- Full-width images with number and caption text -->
       <div class="mySlides fade">
         <div class="numbertext">1 / 3</div>
+        <div class="test-container">
+          <h1>Black Fungus Test</h1>
+          <br />
+          <p>
+            orem ipsum dolor sit amet, consectetur adipiscing elit. Fusce dictum
+            auctor nunc ac maximus. Curabitur ut nisi ac magna vehicula blandit
+            nec vitae tortor. Vivamus viverra euismod ipsum eget euismod.
+            Curabitur dictum suscipit mauris id mattis. Integer ornare libero a
+            pellentesque congue. Suspendisse potenti. Pellentesque vitae ligula ac
+            odio lacinia tempor non vitae justo. Nam vulputate purus elit, nec
+            feugiat sem mollis nec. Aliquam imperdiet odio in erat viverra mollis.
+            Sed volutpat turpis diam, eget vulputate quam hendrerit eget. Aenean
+            justo est, convallis et ex eu, scelerisque varius dui. Proin sed dui
+            eu quam ultrices bibendum.
+          </p>
+          <button class="test__button">click</button>
+        </div>
         <img
           class="slideimage"
           src="slideshow/slide-1.jpg"
@@ -37,6 +49,23 @@
 
       <div class="mySlides fade">
         <div class="numbertext">2 / 3</div>
+        <div class="test-container">
+          <h1>Div 2</h1>
+          <br />
+          <p>
+            orem ipsum dolor sit amet, consectetur adipiscing elit. Fusce dictum
+            auctor nunc ac maximus. Curabitur ut nisi ac magna vehicula blandit
+            nec vitae tortor. Vivamus viverra euismod ipsum eget euismod.
+            Curabitur dictum suscipit mauris id mattis. Integer ornare libero a
+            pellentesque congue. Suspendisse potenti. Pellentesque vitae ligula ac
+            odio lacinia tempor non vitae justo. Nam vulputate purus elit, nec
+            feugiat sem mollis nec. Aliquam imperdiet odio in erat viverra mollis.
+            Sed volutpat turpis diam, eget vulputate quam hendrerit eget. Aenean
+            justo est, convallis et ex eu, scelerisque varius dui. Proin sed dui
+            eu quam ultrices bibendum.
+          </p>
+          <button class="test__button">click</button>
+        </div>
         <img
           class="slideimage"
           src="slideshow/slide-2.jpg"
@@ -46,6 +75,23 @@
 
       <div class="mySlides fade">
         <div class="numbertext">3 / 3</div>
+        <div class="test-container">
+          <h1>Div 3</h1>
+          <br />
+          <p>
+            orem ipsum dolor sit amet, consectetur adipiscing elit. Fusce dictum
+            auctor nunc ac maximus. Curabitur ut nisi ac magna vehicula blandit
+            nec vitae tortor. Vivamus viverra euismod ipsum eget euismod.
+            Curabitur dictum suscipit mauris id mattis. Integer ornare libero a
+            pellentesque congue. Suspendisse potenti. Pellentesque vitae ligula ac
+            odio lacinia tempor non vitae justo. Nam vulputate purus elit, nec
+            feugiat sem mollis nec. Aliquam imperdiet odio in erat viverra mollis.
+            Sed volutpat turpis diam, eget vulputate quam hendrerit eget. Aenean
+            justo est, convallis et ex eu, scelerisque varius dui. Proin sed dui
+            eu quam ultrices bibendum.
+          </p>
+          <button class="test__button">click</button>
+        </div>
         <img
           class="slideimage"
           src="slideshow/slide-3.jpg"
@@ -57,10 +103,27 @@
       <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
       <a class="next" onclick="plusSlides(1)">&#10095;</a>
 
-      <div class="test-container">
-        <h1>Black Fungus Test</h1>
-        <br />
-        <p>
+      
+ 
+    </div>
+
+    <!-- The dots/circles -->
+     <div class="dotcontainer" style="text-align: center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+    <div class="bottom-heading hidden">
+      <h2>Hello</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti fuga
+        porro nam dolores expedita tempore veritatis laudantium, nemo eveniet
+        iure aliquid delectus vel consectetur ipsum laborum iste at, tenetur ab.
+      </p>
+    </div>
+    <div id="bottom-grid">
+      <div class="sliding-text">
+        <marquee class="sliding-text links" direction="up">
           orem ipsum dolor sit amet, consectetur adipiscing elit. Fusce dictum
           auctor nunc ac maximus. Curabitur ut nisi ac magna vehicula blandit
           nec vitae tortor. Vivamus viverra euismod ipsum eget euismod.
@@ -70,37 +133,16 @@
           feugiat sem mollis nec. Aliquam imperdiet odio in erat viverra mollis.
           Sed volutpat turpis diam, eget vulputate quam hendrerit eget. Aenean
           justo est, convallis et ex eu, scelerisque varius dui. Proin sed dui
-          eu quam ultrices bibendum.
-        </p>
-        <button class="test__button">click</button>
+          eu quam ultrices bibendum.</marquee
+        >
       </div>
+
+      <div class="info-container hidden"></div>
+      <div class="info-container hidden"></div>
+      <div class="info-container hidden"></div>
     </div>
-    <br />
-
-    <!-- The dots/circles -->
-    <div class="dotcontainer" style="text-align: center">
-      <span class="dot" onclick="currentSlide(1)"></span>
-      <span class="dot" onclick="currentSlide(2)"></span>
-      <span class="dot" onclick="currentSlide(3)"></span>
-    </div>
-
-
-    <div class="sliding-text">
-
-      <marquee class="sliding-text" direction="up"> orem ipsum dolor sit amet, consectetur adipiscing elit. Fusce dictum
-        auctor nunc ac maximus. Curabitur ut nisi ac magna vehicula blandit
-        nec vitae tortor. Vivamus viverra euismod ipsum eget euismod.
-        Curabitur dictum suscipit mauris id mattis. Integer ornare libero a
-        pellentesque congue. Suspendisse potenti. Pellentesque vitae ligula ac
-        odio lacinia tempor non vitae justo. Nam vulputate purus elit, nec
-        feugiat sem mollis nec. Aliquam imperdiet odio in erat viverra mollis.
-        Sed volutpat turpis diam, eget vulputate quam hendrerit eget. Aenean
-        justo est, convallis et ex eu, scelerisque varius dui. Proin sed dui
-        eu quam ultrices bibendum.</marquee>
-    </div>
-    
 
     <script src="index.js"></script>
-</body>
-<footer></footer>
+  </body>
+  <footer></footer>
 </html>
