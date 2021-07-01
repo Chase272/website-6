@@ -7,6 +7,12 @@
 body {
   background-size: 100%;
   font-family: Arial, sans-serif;
+  background: #23074d; 
+ 
+  background: -webkit-linear-gradient(to left, #cc5333, #23074d); 
+ 
+  background: linear-gradient(to left, #cc5333, #23074d);
+
 }
 
 .navbar {
@@ -25,15 +31,12 @@ body {
   justify-content: flex-end;
   align-content: center;
   z-index: 10;
-}
-a {
-  text-decoration: none;
-  text-decoration-color: none;
-  color: black;
-}
-a:hover {
-  color: white;
-  background-color: #65c9cd;
+
+  background: #23074d; 
+ 
+  background: -webkit-linear-gradient(to right, #cc5333, #23074d); 
+ 
+  background: linear-gradient(to right, #cc5333, #23074d);
 }
 
 .nav-button {
@@ -41,15 +44,25 @@ a:hover {
   border: none;
   padding-right: 25px;
   font-size: 16px;
+  color: white;
+  border-style: solid;
+  border-color: transparent;
+  text-align: center;
 }
 
 .nav-button:hover {
-  color: white;
-  background-color: #65c9cd;
+  border-bottom-color: whitesmoke;
+  border-bottom-width: 3px;
+  transition-timing-function: ease-in-out;
+  transition: 0.2s;
+  transform: translateY(25%);
+animation-iteration-count: 1;
+
+
 }
 /* Slideshow container */
 .slideshow-container {
-  top: 2px;
+  top: 30px;
   width: 100%;
   position: relative;
   margin: auto;
