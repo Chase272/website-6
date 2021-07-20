@@ -9,7 +9,7 @@
 body {
   background-size: 100%;
   font-family: Arial, sans-serif;
-  background: #1D83FF;
+  background: rgb(202, 198, 194); 
 
   
  /* background: #23074d;
@@ -24,7 +24,7 @@ body {
   box-sizing: border-box;
   position: fixed;
   display: flex;
-  background-color: rgb(32, 32, 32);
+  background: linear-gradient(to  right, #0a2d90 50%, #ffffff 209%);
   text-decoration: none;
   /* box-shadow: 4px 5px 8px; */
   height: 60px;
@@ -60,7 +60,7 @@ animation-iteration-count: 1;
 }
 
 .nav-button:hover {
-  border-bottom-color: #FFFFFF;
+  border-bottom-color: whitesmoke;
   border-bottom-width: 3px;
   transition-timing-function: ease-in-out;
   transition: 0.2s;
@@ -103,7 +103,7 @@ animation-iteration-count: 1;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(255, 220, 174, 0.164);
 }
 
 /* Position the "next button" to the right */
@@ -115,7 +115,7 @@ animation-iteration-count: 1;
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover,
 .next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(241, 147, 24, 0.8);
 }
 
 /* Caption text */
@@ -191,17 +191,16 @@ animation-iteration-count: 1;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: #FFFFFF;
-  background: #3c1249;
+  color:black;
+  background: #d1d0da;
   text-align: center;
   width: 50%;
   left: 25%;
   position: absolute;
-  border: 4px solid #3c1249;
+  border: 4px solid #EFEFEF;
   border-radius: 20px;
   padding: 10px 10px;
   bottom: 150px;
-  letter-spacing: 0.0625em;
   cursor: default;
   font-size: 19px;
   font-family: 'Roboto', sans-serif;
@@ -212,18 +211,24 @@ animation-iteration-count: 1;
   .test-container {
   width: 50%;
   font-size: 15px;
-}}
+}
+
+.bottom-heading {
+  font-size: 15px;
+  color: black;
+}
+}
 .test__button {
   width: 100px;
   justify-self: center;
   border: none;
-  background-color:  #972eb8;
+  background-color:  #ff7301;
   color: white;
   border-radius: 9%;
   margin-top: 10px;
   padding: 10px 10px;
   font-size: 20px;
-  box-shadow: 0px 2px 4px #400d50;
+  box-shadow: 0px 2px 4px rgba(65, 63, 63, 0.589);
   cursor: pointer;
   transition-timing-function: ease-in-out;
   transition: 0.2s;
@@ -233,7 +238,7 @@ animation-iteration-count: 1;
 
 .test__button:hover {
   color: white;
-  background-color: #220a29;
+  background-color: #6b3000;
   cursor: pointer;
   transition-timing-function: ease-in-out;
   transition: 0.2s;
@@ -246,16 +251,19 @@ animation-iteration-count: 1;
 .bottom-heading {
   text-align: center;
   height: 200px;
-  background-color: #8c09d8;
+  background-color: #285ef0;
   color: whitesmoke;
-  padding: 10px 0px;
+  padding: 10px 100px 0px 100px;
   box-shadow: 0px 2px 10px #333;
   position: relative;
   z-index: 5;
   margin-bottom: 10px;
   font-family: 'Roboto', sans-serif;
+  font-size: 20px;
 }
-
+.hidden {
+  opacity: 0;
+}
 
 .fade-in {
   animation-name: appear;
@@ -284,7 +292,8 @@ animation-iteration-count: 1;
   display: grid;
   grid-template-columns: 1fr 3fr;
   grid-auto-rows: minmax(200px, auto);
-  grid-column-gap: 10px;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
 }
 
 .sliding-text {
@@ -307,9 +316,9 @@ border-top-color: white;
 
 
 .info-container {
-  color: white;
+  padding: 20px;
+  color: black;
   background-color: transparent;
-  border: 1px solid;
   text-align: right;
   grid-column: 1/4;
   transition-timing-function: ease-in-out;
@@ -321,64 +330,18 @@ border-top-color: white;
   transition-timing-function: ease-in-out;
   transition: 0.7s;
   transform-origin: bottom center;
+  color: #EFEFEF;
 
 }
-  
 
-/* heart logo 
-.heart {
-  background-color: transparent;
-  display: inline-block;
-  height: 30px;
-  margin: 0 10px;
-  position: relative;
-  top: 0;
-  transform: rotate(-45deg);
-  width: 30px;
+.last-info-container:hover{
+  background-color: #000066;
+  transition-timing-function: ease-in-out;
+  transition: 0.7s;
+  transform-origin: bottom center;
+  color: #EFEFEF;
 
-  background-image: url("heart.png");
-  background-size: 100%;
-  background-repeat: no-repeat;
-  content: '&#9829';
-  
 }
-
-
-.heart:before,
-.heart:after {
-  content: "";
-  background-color: red;
-  border-radius: 50%;
-  height: 30px;
-  position: absolute;
-  width: 30px;
-}
-
-.heart:before {
-  top: -15px;
-  left: 0;
-}
-
-.heart:after {
-  left: 15px;
-  top: 0;
-}
-.heart{
-fill: white;
-position: fixed;
-top: 5px;
-width: 50px;
-animation: pulse 1s ease infinite;
-right: 88%;
-}
-
-@keyframes pulse {
-0% { transform: scale(0.7); }
-50% { transform: scale(1); }
-100% { transform: scale(0.7); }
-}
-
-*/
 
 /* Pulse Animation */
 
