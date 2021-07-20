@@ -9,11 +9,14 @@
 body {
   background-size: 100%;
   font-family: Arial, sans-serif;
-  background: #23074d; 
+  background: #1D83FF;
+
+  
+ /* background: #23074d;
+
+ background: -webkit-linear-gradient(to left, #cc5333, #23074d); 
  
-  background: -webkit-linear-gradient(to left, #cc5333, #23074d); 
- 
-  background: linear-gradient(to left, #cc5333, #23074d);
+  background: linear-gradient(to left, #cc5333, #23074d); */
 
 }
 
@@ -50,10 +53,14 @@ body {
   border-style: solid;
   border-color: transparent;
   text-align: center;
+  transition-timing-function: ease-in-out;
+  transition: 0.2s;
+  transform: translateY();
+animation-iteration-count: 1;
 }
 
 .nav-button:hover {
-  border-bottom-color: whitesmoke;
+  border-bottom-color: #FFFFFF;
   border-bottom-width: 3px;
   transition-timing-function: ease-in-out;
   transition: 0.2s;
@@ -184,14 +191,14 @@ animation-iteration-count: 1;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color:seashell;
+  color: #FFFFFF;
   background: #3c1249;
   text-align: center;
   width: 50%;
   left: 25%;
   position: absolute;
   border: 4px solid #3c1249;
-  border-radius: 10px;
+  border-radius: 20px;
   padding: 10px 10px;
   bottom: 150px;
   letter-spacing: 0.0625em;
@@ -218,14 +225,21 @@ animation-iteration-count: 1;
   font-size: 20px;
   box-shadow: 0px 2px 4px #400d50;
   cursor: pointer;
-  
+  transition-timing-function: ease-in-out;
+  transition: 0.2s;
+  transform: translateY(10%);
+animation-iteration-count: 1;
 }
 
 .test__button:hover {
   color: white;
   background-color: #220a29;
   cursor: pointer;
-  transform: scale(1.2);
+  transition-timing-function: ease-in-out;
+  transition: 0.2s;
+  transform: translateY(-10%);
+animation-iteration-count: 1;
+
 }
 
 
@@ -241,9 +255,7 @@ animation-iteration-count: 1;
   margin-bottom: 10px;
   font-family: 'Roboto', sans-serif;
 }
-.hidden {
-  opacity: 0;
-}
+
 
 .fade-in {
   animation-name: appear;
@@ -283,10 +295,130 @@ animation-iteration-count: 1;
   grid-row: 3/3;
 }
 
+#footer{
+  background-color: #485461;
+background-image: linear-gradient(315deg, #485461 0%, #28313b 74%);
+width: 100%;
+height: auto;
+text-align: center;
+border: solid;
+border-top-color: white;
+}
+
+
 .info-container {
+  color: white;
   background-color: transparent;
   border: 1px solid;
   text-align: right;
   grid-column: 1/4;
+  transition-timing-function: ease-in-out;
+  transition: 0.7s;
 }
 
+.info-container:hover{
+  background-color: #000066;
+  transition-timing-function: ease-in-out;
+  transition: 0.7s;
+  transform-origin: bottom center;
+
+}
+  
+
+/* heart logo 
+.heart {
+  background-color: transparent;
+  display: inline-block;
+  height: 30px;
+  margin: 0 10px;
+  position: relative;
+  top: 0;
+  transform: rotate(-45deg);
+  width: 30px;
+
+  background-image: url("heart.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  content: '&#9829';
+  
+}
+
+
+.heart:before,
+.heart:after {
+  content: "";
+  background-color: red;
+  border-radius: 50%;
+  height: 30px;
+  position: absolute;
+  width: 30px;
+}
+
+.heart:before {
+  top: -15px;
+  left: 0;
+}
+
+.heart:after {
+  left: 15px;
+  top: 0;
+}
+.heart{
+fill: white;
+position: fixed;
+top: 5px;
+width: 50px;
+animation: pulse 1s ease infinite;
+right: 88%;
+}
+
+@keyframes pulse {
+0% { transform: scale(0.7); }
+50% { transform: scale(1); }
+100% { transform: scale(0.7); }
+}
+
+*/
+
+/* Pulse Animation */
+
+ #container {
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  position: fixed;
+  right: 95%;
+  top: 4%;
+}
+
+.loading svg {
+  width: 20px;
+  height: 20px;
+}
+
+.loading {
+  transform: 
+    scale(5);
+}
+
+.loading svg g {
+  fill: none;
+  stroke-width: 5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.loading svg g#back {
+  stroke: white;
+}
+
+@keyframes dash {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    stroke-dashoffset: 0;
+    opacity: 0.5;
+  }
+}
