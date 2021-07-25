@@ -71,7 +71,6 @@ body {
   width: 100%;
   position: relative;
   margin: auto;
-  display: flex;
 }
 
 /* Hide the images by default */
