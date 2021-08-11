@@ -99,3 +99,9 @@ function run() {
 
 run();
 setInterval(run, 2000);
+var btn_array = document.querySelectorAll(".test__button");
+for (let i = 0; i < btn_array.length; i++) {
+  btn_array[i].onclick = function () {
+    window.open("Test.html",'_blank');
+  };
+}
