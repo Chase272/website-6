@@ -8,25 +8,19 @@
     <link href="index.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@200&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@200&display=swap" rel="stylesheet"/>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"/>
+
+    <!-- onclick=" window.open('index.html', '_blank')  -->
     <title>index</title>
   </head>
   <body>
+    <div class="BFT"><b1> <a href="index.html" class="BFT">BLACK FUNGUS </a></b1></div>
     <nav class="navbar">
       <ul class="nav-list">
         <div id="container">
@@ -60,27 +54,11 @@
             </svg>
           </div>
         </div>
-        <!-- <svg class="heart" viewBox="0 0 32 29.6">
-          <path d="M23.6,0c-3.4,0-6.3,2.7-7.6,5.6C14.7,2.7,11.8,0,8.4,0C3.8,
-          0,0,3.8,0,8.4c0,9.4,9.5,11.9,16,21.2
-          c6.1-9.3,16-12.1,16-21.2C32,3.8,28.2,0,23.6,0z"/>
-        </svg>  -->
-        <button value="Home" class="nav-button">Home</button>
-        <button
-          value="Home"
-          class="nav-button"
-          onclick="location.href='#footer';"
-        >
-          About
-        </button>
-        <button
-          value="Home"
-          class="nav-button"
-          onclick="location.href='error404.html';"
-        >
-          404 ERROR
-        </button>
-        <button value="Home" class="nav-button">Home</button>
+        <button value="Home" class="nav-button" onclick="location.href='index.html'">Home</button>
+        <button value="Home" class="nav-button" onclick="location.href='#info'">Info</button>
+        <button value="Home" class="nav-button" onclick="location.href='#links'">Links</button>
+        <button value="Home" class="nav-button" onclick="location.href='#footer'">About</button>
+        <!-- <button value="Home" class="nav-button" onclick="location.href='error404.html';">404 ERROR</button> -->
       </ul>
     </nav>
 
@@ -117,7 +95,7 @@
           </p>
           <button class="test__button">Click</button>
         </div>
-        <img class="slideimage" src="slideshow/bg1.jpg" style="width: 1500px" />
+        <img class="slideimage" src="slideshow/bg1.jpg" style="width: 100%" />
       </div>
 
       <div class="mySlides fade">
@@ -159,25 +137,21 @@
         faster responses.
       </p>
     </div>
-    <div class="info">
+    <div class="info" id="info">
       <h2 class="hidden">Information</h2>
     </div>
     <div id="bottom-grid">
-      <marquee class="sliding-text links" direction="up">
-        orem ipsum dolor sit amet, consectetur adipiscing elit. Fusce dictum
-        auctor nunc ac maximus. Curabitur ut nisi ac magna vehicula blandit nec
-        vitae tortor. Vivamus viverra euismod ipsum eget euismod. Curabitur
-        dictum suscipit mauris id mattis. Integer ornare libero a pellentesque
-        congue. Suspendisse potenti. Pellentesque vitae ligula ac odio lacinia
-        tempor non vitae justo. Nam vulputate purus elit, nec feugiat sem mollis
-        nec. Aliquam imperdiet odio in erat viverra mollis. Sed volutpat turpis
-        diam, eget vulputate quam hendrerit eget. Aenean justo est, convallis et
-        ex eu, scelerisque varius dui. Proin sed dui eu quam ultrices bibendum.
-        <img src="slideshow/slide-1.jpg" alt="" style="height: 100px"
-      /></marquee>
+      <marquee class="sliding-text" id="links" direction="left" onmouseover="this.stop()" onmouseout="this.start()">
+
+       <h1> <u> Important Links</u> </h1> <br> <br>
+        <a href="https://www.mpnrc.org/black-fungus-fungal-infection-symptoms-cause-treatment-precaution" target="_blank"> Preventions from Black Fungus </a> <br> <br> 
+        <a href="https://www.medicoverhospitals.in/blog/black-fungus" target="_blank"> Causes of Black Fungus</a> <br> <br>
+        <a href="https://covid19.healthdata.org/india/maharashtra?view=cumulative-deaths&tab=trend" target="_blank"> COVID-19 Maharashtra Projection Data</a> <br> <br>
+        <a href="https://news.google.com/covid19/map?hl=en-IN&mid=%2Fm%2F055vr&gl=IN&ceid=IN%3Aen&state=1" target="_blank"> COVID-19 Live Count</a> <br> <br>
+        </marquee>
 
       <div class="info-container hidden">
-        <img src="doctor.jpg" alt="" />
+        <img src="doctor.jpg" alt="" style="border-radius: 20px;" />
 
         <p>
           <b>What is Black Fungus</b>
@@ -194,33 +168,146 @@
           virus.
         </p>
       </div>
-      <div class="info-container hidden">
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis
-          explicabo quam tempora, in, ratione assumenda expedita iusto doloribus
-          error iure accusamus itaque nihil eum? In veritatis illum veniam quia
-          alias.
-        </p>
+      <div class="info-container hidden" style="background-color: #285ef0;">
+        <h2><strong>What is the disease?</strong></h2> <br>
+        <p>Although rare, it is a serious infection. It is caused by a group of 
+          moulds known as mucormycetes present naturally in the environment. It 
+          mainly affects people who are on medication for health problems that 
+          reduces their ability to fight environmental pathogens, say experts from 
+          the Covid-19 task force task force.</p>  <br>
+
+          <p>Sinuses or lungs of such individuals get affected after they inhale 
+            fungal spores from the air. Doctors in some states have noted a rise in 
+            cases of mucormycosis among people hospitalized or recovering from Covid 19, 
+            with some requiring urgent surgery. Usually, mucormycetes does not pose a major 
+            threat to those with a healthy immune system.</p>
       </div>
       <div class="last-info-container hidden">
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis
-          explicabo quam tempora, in, ratione assumenda expedita iusto doloribus
-          error iure accusamus itaque nihil eum? In veritatis illum veniam quia
-          alias.
-        </p>
+        <h2 style="color:#1268b2;font-size: 25px;"><strong>What happens when one contracts it?</strong></h2> <br>
+
+        <p>Warning signs include pain and redness around the eyes or nose, with fever, headache, 
+          coughing, shortness of breath, bloody vomits, and altered mental status. According to 
+          the advisory, infection with mucormycetes should be suspected when there is:</p> <br>
+
+          <p><strong>*</strong> Sinusitis — nasal blockade or congestion, nasal discharge (blackish/bloody);<br>
+            <strong>*</strong> Local pain on the cheek bone, one-sided facial pain, numbness or swelling;<br>
+            <strong>*</strong> Blackish discoloration over bridge of nose/palate;<br>
+            <strong>*</strong> Loosening of teeth, jaw involvement;<br>
+            <strong>*</strong> Blurred or double vision with pain;<br> <br> <br>
+
+            <p>Experts advise that one should not count all cases of blocked nose as cases of bacterial sinusitis, 
+              particularly in the context of immunosuppression and/or Covid-19 patients on immunomodulators. Do not 
+              hesitate to seek aggressive investigations for detecting fungal infection, they advise.</p>
       </div>
-    </div>
+    </div>  
+    <br>
+    <hr size="4" noshade color="whitesmoke"> <br>
+
+    <section class="section1">  
+      
+      <img style="width: 7%; height: 5%;" src="images/I1.png" ><h2 style="color:#1268b2;font-size: 25px;" ><strong>What’s the treatment?</strong></h2>  <br> <br>
+
+      <p>While it is treated with antifungals, <a href="https://indianexpress.com/article/cities/pune/mucormycosis-and-covid-19-doctors-say-significant-challenge-symptoms-should-not-ignored-7293572/" >mucormycosis </a>
+        may eventually require surgery. Doctors have said that it is of utmost importance to control diabetes, reduce steroid use, and discontinue immunomodulating drugs. 
+         To maintain adequate systemic hydration, the treatment includes infusion of normal saline (IV) before infusion of amphotericin B and antifungal therapy, for 
+         at least 4-6 weeks.</p> <br>
+
+         <p>Experts in the task force have stressed the need to control hyperglycemia , and monitor blood glucose level after discharge following Covid-19 treatment, 
+           and also in diabetics. One should use steroids 
+           judiciously — correct timing, correct dose and duration are important.</p> <br>
+
+           <p>Management of Covid patients with mucormycosis is a team effort involving microbiologists, internal medicine 
+             specialists, intensivist neurologist, ENT specialists, ophthalmologists, dentists, surgeons (maxillofacial/plastic) and others.</p> <br> 
+             
+             <hr size="4" noshade color="whitesmoke"> <br>
+             
+             <h2  style="color:#1268b2;font-size: 25px;"><strong>How can one prevent it?</strong></h2> <br>
+
+             <p>One should remember that it is a rare disease. However, some groups of people are more vulnerable than others. What predisposes patients is uncontrolled 
+               diabetes mellitus, immunosuppression by steroids, 
+               prolonged ICU stay, and <a href="https://indianexpress.com/article/coronavirus/serious-fungal-infection-seen-in-some-covid-patients-with-co-morbidities-expert-7291675/" class="">comorbidities </a>— 
+               post transplant/malignancy, voriconazole therapy.</p> <br>
+
+               <p>Experts advise that you use masks if you are visiting dusty construction sites. Wear shoes, long trousers, long-sleeved shirts and gloves while handling soil (gardening), 
+                 moss or manure. Maintain personal hygiene including a thorough scrub bath.</p> <br>
+
+                  <hr size="4" noshade color="whitesmoke"> <br>
+
+                  <h2 style="color:#1268b2;font-size: 25px;"><strong>How frequently are cases being detected?</strong></h2> <br>
+
+                  <p>While cases are on the rise, there has been no major outbreak. Niti Aayog member (health) Dr V K Paul said at a media briefing that there has 
+                    been no major outbreak and they were monitoring cases being reported.</p> <br>
+
+                  <p>In Maharashtra, Dr Tatyarao Lahane, head of the Directorate of Medical Education and Research, has said that cases of mucormycosis are on the rise.
+                     “Traditionally we see a case every few months, usually in very poorly controlled diabetic and immunocompromised patients,” said Dr Parikshit Gogate, 
+                     consulting ophthalmologist at Ruby Hall Clinic, Pune. “But in the past 2 to 3 weeks, I have seen almost 25-30 of them, mostly in Ruby Hall, some in D Y 
+                     Patil Hospital.”</p> <br>
+
+                  <p>Mucormycosis developing in post Covid-19 setting breaks the back of a patient’s family that is barely recovering from this viral infection , 
+                    infectious diseases consultant in Pune Dr Rajeev Soman wrote in the Journal of Association of Physicians of India in January this year.</p> <br>
+
+                  <p>Dr Soman is one of the expert members who drafted the advisory as part of the national Covid-19 task force. The also task force includes 
+                    Dr Arunaloke Chakraborti, Head of the Department of Medical Microbiology, PGIMER, <a href="https://indianexpress.com/elections/chandigarh-lok-sabha-election-results/" class="">Chandigarh</a>; 
+                    Dr Atul Patel, infectious diseases specialist, Ahmedabad; and several others.</p> <br> <br>
+
+                  <p>Patients most vulnerable to mucormycosis are those who have been treated with steroids and other drugs for Covid 19 to reduce inflammation. Efforts
+                     are underway to collect data for large studies being done by the Fungal Infections Study Forum and Clinical infectious Diseases Society, Dr Soman said.</p> <br><br>
+    </section>
+               <br> <br>
+
+    <section class="graph" > <strong> <h2 style="color:#1268b2;font-size: 40px;">Statestics for COVID-19 Cases in MAHARASHTRA</h2></strong> <br> <br>
+      
+      <iframe class="graph" src="graph.html" scrolling="yes"></iframe> <br> </section> <br>
+
+      <hr size="4" noshade color="whitesmoke"> <br>
+
+      <section style="padding-top: 106px;">
+        <h3 style="color:#1268b2;font-size: 25px;"> How Black fungus effects COVID patients?</h3> <br>
+        <p style="text-align:justify;">Mucormycosis is a rare but serious fungal infection. While the cases of this infection were relatively less, the Covid-19 outbreak has 
+          given a boost to the spread of this infection. It is commonly known as black fungus, the infection is now detected among Covid-19 patients across India. With a significant increase in fungal infection cases, 
+          the government has mandated that all states have to report suspected and confirmed cases of mucormycosis to the Integrated Disease Surveillance Programme (IDSP). </p><br> <br>
+
+          <p style="text-align:justify; ">Now let’s take a look at what this infection is and why it is caused more frequently among Covid-19 patients. The infection is rare, but once a person is infected, the fungus 
+            manifests in the skin or can affect the brain or lungs, many cases of this infection have been reported in Covid-19 patients.</p> <br> <br> <br>
+
+
+            <h3 style="color:#1268b2; font-size:25px;">Why is it occurring in COVID-19 patients!!</h3> <br> <br>
+            <p style="text-align:justify;">Mucormycosis can occur after COVID-19 infection, whether during the hospital stay or a few weeks after discharge.</p> <br>
+            <p style="text-align:justify;">The COVID-19 generates a sudden change in the interior environment of the host for the fungus, and the medical treatment administered unknowingly promotes 
+              fungal development. COVID-19 causes harm to the airway mucosa and blood vessels. It also causes a rise in serum iron, which is required for the fungus to grow. Broad-spectrum antibiotics not only kill 
+              potentially harmful bacteria but also beneficial commensals. Although antifungals such as Voriconazole prevent Aspergillosis, Mucor survives and grows due to a lack of resistance. Long-term ventilation decreases 
+              immunity, and there is conjecture that the humidifier water that is delivered along with the oxygen transfers the fungus. </p> <br><br><br>
+
+             
+
+              <div class="sf-content-block content-block">
+                <div><h1 style="color:#1268b2;font-size: 50px;">COVID-19 transmission and protective measures</h1> <br> <br>
+                  <p>COVID-19 spreads primarily from person to person. Fighting this disease is our joint responsibility.</p> <br>
+                  <p>Protect yourself and others by making these 6 simple precautions your new habits:</p><br>
+                  <ul>
+                    <li><strong>* Clean your hands often</strong></li>
+                    <li><strong>* Cough or sneeze in your bent elbow - not your hands!</strong></li>
+                    <li><strong>* Avoid touching your eyes, nose and mouth</strong></li>
+                    <li><strong>* Limit social gatherings and time spent in crowded places</strong></li>
+                    <li><strong>* Avoid close contact with someone who is sick</strong></li>
+                    <li><strong>* Clean and disinfect frequently touched objects and surfaces</strong></li>
+                  </ul>
+                </p>
+                
+                </div>
+            
+            </div> <br>
+              
+         
+      
+      </section>
 
     <script src="index.js"></script>
-  </body>
-  <footer id="footer">
-    fuck you bitch <br />
-    fuck you bitch <br />
-    fuck you bitch <br />
-    fuck you bitch <br />
-    fuck you bitch <br />
-    fuck you bitch <br />
-    fuck you bitch <br />
+  </body> <br> <br> 
+  <footer id="footer" class="footer">
+    
+    <div id="About"> <u><strong>ABOUT US</strong> </u></div> <br />
+    fuck you bitch <br>
+    <a id="alogo" href="https://engg.kkwagh.edu.in/" target="_black"> <img id="clogo" src="clogo.png"> </a>  <br>
   </footer>
 </html>
